@@ -17,7 +17,7 @@ class GameScene: SKScene {
     var ocean2: Ocean?
     var player: Player?
     var island: Island?
-    var cloud: Cloud?
+    var clouds: [Cloud] = []
     
     var screenSize = UIScreen.main.bounds
     var screenHeight: CGFloat?
@@ -43,8 +43,12 @@ class GameScene: SKScene {
         island = Island()  // instantiate new Island allocate memory
         addChild(island!)
         
-        cloud = Cloud()  // instantiate new Cloud allocate memory
-        addChild(cloud!)
+        for index in 0...2 {
+            let cloud: Cloud = Cloud()  // instantiate new Cloud allocate memory
+            clouds.append(cloud)
+            addChild(cloud)
+        }
+        
     }
     
     
@@ -82,6 +86,8 @@ class GameScene: SKScene {
         ocean2?.Update()
         player?.Update()
         island?.Update()
-        cloud?.Update()
+        for cloud in clouds {
+            cloud.Update()
+        }
     }
 }
