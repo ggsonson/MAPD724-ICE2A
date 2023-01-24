@@ -16,6 +16,7 @@ class GameScene: SKScene {
     var ocean1: Ocean?
     var ocean2: Ocean?
     var player: Player?
+    var island: Island?
     
     var screenSize = UIScreen.main.bounds
     var screenHeight: CGFloat?
@@ -28,18 +29,18 @@ class GameScene: SKScene {
         
         //add ocean to scene
         ocean1 = Ocean()  // instantiate new Ocean allocate memory
-        ocean1?.Start()
         ocean1?.Reset()
         addChild(ocean1!)
         
         ocean2 = Ocean()  // instantiate new Ocean allocate memory
-        ocean2?.Start()
         ocean2?.position.y = -627
         addChild(ocean2!)
         
         player = Player()  // instantiate new Player allocate memory
-        player?.Start()
         addChild(player!)
+        
+        island = Island()  // instantiate new Island allocate memory
+        addChild(island!)
     }
     
     
@@ -76,5 +77,6 @@ class GameScene: SKScene {
         ocean1?.Update()
         ocean2?.Update()
         player?.Update()
+        island?.Update()
     }
 }
