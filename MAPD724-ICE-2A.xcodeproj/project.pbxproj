@@ -18,6 +18,8 @@
 		24EBFD5A297F55530089D546 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EBFD55297F55520089D546 /* Player.swift */; };
 		24EBFD5B297F55530089D546 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EBFD57297F55520089D546 /* GameProtocol.swift */; };
 		24EBFD5C297F55530089D546 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EBFD58297F55520089D546 /* GameObject.swift */; };
+		24EBFD5E297F60A60089D546 /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EBFD5D297F60A60089D546 /* Island.swift */; };
+		24EBFD60297F62730089D546 /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EBFD5F297F62730089D546 /* Layer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		24EBFD55297F55520089D546 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		24EBFD57297F55520089D546 /* GameProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
 		24EBFD58297F55520089D546 /* GameObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
+		24EBFD5D297F60A60089D546 /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
+		24EBFD5F297F62730089D546 /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 			children = (
 				24EBFD54297F55520089D546 /* Ocean.swift */,
 				24EBFD55297F55520089D546 /* Player.swift */,
+				24EBFD5D297F60A60089D546 /* Island.swift */,
 			);
 			path = GameObjects;
 			sourceTree = "<group>";
@@ -92,6 +97,7 @@
 			children = (
 				24EBFD57297F55520089D546 /* GameProtocol.swift */,
 				24EBFD58297F55520089D546 /* GameObject.swift */,
+				24EBFD5F297F62730089D546 /* Layer.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -170,9 +176,11 @@
 			files = (
 				24EBFD59297F55530089D546 /* Ocean.swift in Sources */,
 				24EBFD43297F540D0089D546 /* GameScene.swift in Sources */,
+				24EBFD5E297F60A60089D546 /* Island.swift in Sources */,
 				24EBFD5C297F55530089D546 /* GameObject.swift in Sources */,
 				24EBFD45297F540D0089D546 /* GameViewController.swift in Sources */,
 				24EBFD5A297F55530089D546 /* Player.swift in Sources */,
+				24EBFD60297F62730089D546 /* Layer.swift in Sources */,
 				24EBFD3D297F540D0089D546 /* AppDelegate.swift in Sources */,
 				24EBFD5B297F55530089D546 /* GameProtocol.swift in Sources */,
 			);

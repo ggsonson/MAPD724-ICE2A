@@ -1,17 +1,17 @@
 //
-//  Ocean.swift
-//  MAPD724-ICE-1A
+//  Island.swift
+//  MAPD724-ICE-2A
 //
-//  Created by Man Nok Pun on 2023-01-16.
+//  Created by Man Nok Pun on 2023-01-23.
 //
 
-import GameplayKit
 import SpriteKit
+import GameplayKit
 
-class Ocean : GameObject{
+class Island : GameObject{
     
     init(){
-        super.init(imageString: "ocean", initScale: 2)
+        super.init(imageString: "island", initScale: 2)
         Start()
     }
     
@@ -20,7 +20,7 @@ class Ocean : GameObject{
     }
     
     override func Start(){
-        zPosition = Layer.OCAEN.rawValue
+        zPosition = Layer.ISLAND.rawValue
         verticalSpeed = 5.0
     }
     override func Update(){
@@ -28,12 +28,15 @@ class Ocean : GameObject{
         CheckBounds()
     }
     override func CheckBounds(){
-        if(position.y <= -2253) {
+        if(position.y <= -876) {
             Reset()
         }
     }
     override func Reset(){
-        position.y = 2253
+        position.y = 876
+        let randomX: Int = (randomSource?.nextInt(upperBound: 626))! - 313
+        position.x = CGFloat(randomX)
+        isColliding = false
     }
     func Move(){
         position.y -= verticalSpeed!
