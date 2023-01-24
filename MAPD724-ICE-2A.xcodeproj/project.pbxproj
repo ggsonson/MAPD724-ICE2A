@@ -20,6 +20,7 @@
 		24EBFD5C297F55530089D546 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EBFD58297F55520089D546 /* GameObject.swift */; };
 		24EBFD5E297F60A60089D546 /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EBFD5D297F60A60089D546 /* Island.swift */; };
 		24EBFD60297F62730089D546 /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EBFD5F297F62730089D546 /* Layer.swift */; };
+		24EBFD62297F65FF0089D546 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EBFD61297F65FF0089D546 /* Cloud.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		24EBFD58297F55520089D546 /* GameObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
 		24EBFD5D297F60A60089D546 /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
 		24EBFD5F297F62730089D546 /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
+		24EBFD61297F65FF0089D546 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				24EBFD54297F55520089D546 /* Ocean.swift */,
 				24EBFD55297F55520089D546 /* Player.swift */,
 				24EBFD5D297F60A60089D546 /* Island.swift */,
+				24EBFD61297F65FF0089D546 /* Cloud.swift */,
 			);
 			path = GameObjects;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				24EBFD5E297F60A60089D546 /* Island.swift in Sources */,
 				24EBFD5C297F55530089D546 /* GameObject.swift in Sources */,
 				24EBFD45297F540D0089D546 /* GameViewController.swift in Sources */,
+				24EBFD62297F65FF0089D546 /* Cloud.swift in Sources */,
 				24EBFD5A297F55530089D546 /* Player.swift in Sources */,
 				24EBFD60297F62730089D546 /* Layer.swift in Sources */,
 				24EBFD3D297F540D0089D546 /* AppDelegate.swift in Sources */,
