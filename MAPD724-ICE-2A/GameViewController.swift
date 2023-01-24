@@ -14,6 +14,9 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //print(self.view.frame.size.width)
+        //print(self.view.frame.size.height)
+        
         // Load 'GameScene.sks' as a GKScene. This provides gameplay related content
         // including entities MDPand graphs.
         if let scene = GKScene(fileNamed: "GameScene") {

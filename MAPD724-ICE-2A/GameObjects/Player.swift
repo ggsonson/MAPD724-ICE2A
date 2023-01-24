@@ -27,16 +27,16 @@ class Player: GameObject {
     }
     override func CheckBounds(){
         // constrain player on left boundary
-        if(position.x <= -210){
-            position.x = -210
+        if(position.x <= -320){
+            position.x = -320
         }
         // constrain player on right boundary
-        if(position.x >= 210){
-            position.x = 210
+        if(position.x >= 320){
+            position.x = 320
         }
     }
     override func Reset(){
-        position.y = -495
+        position.y = -640
     }
     func TouchMove(newPos: CGPoint){
         position = newPos
